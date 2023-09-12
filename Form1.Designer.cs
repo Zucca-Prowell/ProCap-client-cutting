@@ -1,6 +1,6 @@
-﻿namespace Client
+﻿namespace PROCAP_CLIENT
 {
-    partial class Form1
+    partial class Formmain
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,117 +29,95 @@
         private void InitializeComponent()
         {
             buttonadd = new Button();
-            buttonmodify = new Button();
-            buttondelete = new Button();
             buttonsearch = new Button();
-            buttonclear = new Button();
-            comboBox1 = new ComboBox();
-            textBoxinput = new TextBox();
+            buttonmodify = new Button();
+            comboBoxdp = new ComboBox();
+            textBoxsearch = new TextBox();
             dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // buttonadd
             // 
-            buttonadd.Location = new Point(716, 169);
+            buttonadd.Location = new Point(677, 140);
             buttonadd.Name = "buttonadd";
             buttonadd.Size = new Size(75, 23);
-            buttonadd.TabIndex = 1;
+            buttonadd.TabIndex = 0;
             buttonadd.Text = "添加";
             buttonadd.UseVisualStyleBackColor = true;
             buttonadd.Click += buttonadd_Click;
             // 
+            // buttonsearch
+            // 
+            buttonsearch.Location = new Point(677, 169);
+            buttonsearch.Name = "buttonsearch";
+            buttonsearch.Size = new Size(75, 23);
+            buttonsearch.TabIndex = 1;
+            buttonsearch.Text = "搜索";
+            buttonsearch.UseVisualStyleBackColor = true;
+            // 
             // buttonmodify
             // 
-            buttonmodify.Location = new Point(716, 198);
+            buttonmodify.Location = new Point(677, 198);
             buttonmodify.Name = "buttonmodify";
             buttonmodify.Size = new Size(75, 23);
             buttonmodify.TabIndex = 2;
             buttonmodify.Text = "修改";
             buttonmodify.UseVisualStyleBackColor = true;
+            buttonmodify.Click += buttonmodify_Click;
             // 
-            // buttondelete
+            // comboBoxdp
             // 
-            buttondelete.Location = new Point(716, 227);
-            buttondelete.Name = "buttondelete";
-            buttondelete.Size = new Size(75, 23);
-            buttondelete.TabIndex = 3;
-            buttondelete.Text = "刪除";
-            buttondelete.UseVisualStyleBackColor = true;
-            buttondelete.Click += buttondelete_Click;
+            comboBoxdp.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxdp.FormattingEnabled = true;
+            comboBoxdp.Items.AddRange(new object[] { "裁加", "針車", "組底", "成型", "Lean線" });
+            comboBoxdp.Location = new Point(550, 141);
+            comboBoxdp.Name = "comboBoxdp";
+            comboBoxdp.Size = new Size(121, 23);
+            comboBoxdp.TabIndex = 3;
             // 
-            // buttonsearch
+            // textBoxsearch
             // 
-            buttonsearch.Location = new Point(716, 256);
-            buttonsearch.Name = "buttonsearch";
-            buttonsearch.Size = new Size(75, 23);
-            buttonsearch.TabIndex = 4;
-            buttonsearch.Text = "查詢";
-            buttonsearch.UseVisualStyleBackColor = true;
-            // 
-            // buttonclear
-            // 
-            buttonclear.Location = new Point(716, 285);
-            buttonclear.Name = "buttonclear";
-            buttonclear.Size = new Size(75, 23);
-            buttonclear.TabIndex = 5;
-            buttonclear.Text = "清空";
-            buttonclear.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "型號", "型體" });
-            comboBox1.Location = new Point(589, 256);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 6;
-            comboBox1.SelectedValueChanged += comboBox1_SelectedValueChanged;
-            // 
-            // textBoxinput
-            // 
-            textBoxinput.Location = new Point(589, 285);
-            textBoxinput.Name = "textBoxinput";
-            textBoxinput.Size = new Size(121, 23);
-            textBoxinput.TabIndex = 7;
+            textBoxsearch.Location = new Point(550, 170);
+            textBoxsearch.Name = "textBoxsearch";
+            textBoxsearch.Size = new Size(121, 23);
+            textBoxsearch.TabIndex = 4;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 32);
+            dataGridView1.Location = new Point(12, 33);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(571, 406);
-            dataGridView1.TabIndex = 8;
+            dataGridView1.Size = new Size(511, 405);
+            dataGridView1.TabIndex = 5;
             // 
-            // Form1
+            // Formmain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
-            Controls.Add(textBoxinput);
-            Controls.Add(comboBox1);
-            Controls.Add(buttonclear);
-            Controls.Add(buttonsearch);
-            Controls.Add(buttondelete);
+            Controls.Add(textBoxsearch);
+            Controls.Add(comboBoxdp);
             Controls.Add(buttonmodify);
+            Controls.Add(buttonsearch);
             Controls.Add(buttonadd);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Formmain";
+            Text = "產量登記";
+            Load += Formmain_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
+
         private Button buttonadd;
-        private Button buttonmodify;
-        private Button buttondelete;
         private Button buttonsearch;
-        private Button buttonclear;
-        private ComboBox comboBox1;
-        private TextBox textBoxinput;
+        private Button buttonmodify;
+        private TextBox textBoxsearch;
         private DataGridView dataGridView1;
+        protected internal ComboBox comboBoxdp;
     }
 }

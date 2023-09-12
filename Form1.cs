@@ -1,78 +1,36 @@
+using static System.Windows.Forms.DataFormats;
 
-
-using Npgsql;
-using Npgsql.Internal;
-using System.Data;
-using System.Data.SqlTypes;
-using System.DirectoryServices.ActiveDirectory;
-using System.Runtime.CompilerServices;
-
-namespace Client
+namespace PROCAP_CLIENT
 {
-
-    public partial class Form1 : Form
+    public partial class Formmain : Form
     {
-        NpgsqlConnection conn;
-        NpgsqlCommand cmd;
-        NpgsqlDataAdapter adp;
-        DataSet dat;
-
-        public Form1()
-        {
-            InitializeComponent();
-            comboBox1.SelectedIndex = 0;//默認顯示Combox中的第一個選項
-
-        }
-        private void Form1_load(object sender, EventArgs e)
-        {
-            DataGridViewDataLoad();
-        }
-        private void DataGridViewDataLoad()
-        {
-            string sql1 = "select * from Prowell";
-            adp = new NpgsqlDataAdapter(sql1, conn);
-            dat = new DataSet();
-            adp.Fill(dat);
-            dataGridView1.DataSource = dat.Tables[0];
-
-        }
-        public void adddata()
+        public Formmain()
         {
             InitializeComponent();
         }
-        public void adddata_load(object sender, EventArgs e)
+
+        private void buttonmodify_Click(object sender, EventArgs e)
         {
 
         }
 
         private void buttonadd_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-        
-            form2.Show();
-            form2.textBox1.Focus();
-            //默認男段
-           
-            
-        }
-    
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
-        {
-            /*
-             * 當combox裡面的名字與數據庫裡面的名字相對應，Datagrid顯示出那一行的信息
-             * */
-        }
-
-        private void buttondelete_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("是否刪除改信息？", "刪除", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
+            switch (comboBoxdp.SelectedIndex)
             {
-                /*
-                 * 刪除DB中的數據，選中一個刪除整行
-                 * */
+                case 0: { Formchat formchat = new Formchat(); formchat.Show(); formchat.textBox1.Focus(); } break;
+                case 1: { Formstitch formstitch = new Formstitch(); formstitch.Show(); formstitch.textBox1.Focus(); } break;
+                case 2: { Formsole formsole = new Formsole(); formsole.Show(); formsole.textBox1.Focus(); } break;
+                case 3: { Formassemble formassemble = new Formassemble();formassemble.Show();formassemble.textBox1.Focus(); } break;
+                case 4: break;
+
+
             }
         }
-    }
 
+        private void Formmain_Load(object sender, EventArgs e)
+        {
+            comboBoxdp.SelectedIndex = 0;
+        }
+    }
 }
