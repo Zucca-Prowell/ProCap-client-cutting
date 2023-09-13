@@ -796,11 +796,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ie10\\Desktop\\code\\Client\\Client.csproj",
+      "projectUniqueName": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "D:\\ie10\\Desktop\\code\\Client\\Client.csproj",
+      "projectPath": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj",
       "packagesPath": "C:\\Users\\ie10\\.nuget\\packages\\",
-      "outputPath": "D:\\ie10\\Desktop\\code\\Client\\obj\\",
+      "outputPath": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

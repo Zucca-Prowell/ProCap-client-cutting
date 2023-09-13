@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj": {}
+    "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\PROCAP_CLIENT.csproj": {}
   },
   "projects": {
-    "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj": {
+    "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\PROCAP_CLIENT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj",
-        "projectName": "Client",
-        "projectPath": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj",
+        "projectUniqueName": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\PROCAP_CLIENT.csproj",
+        "projectName": "PROCAP_CLIENT",
+        "projectPath": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\PROCAP_CLIENT.csproj",
         "packagesPath": "C:\\Users\\ie10\\.nuget\\packages\\",
         "outputPath": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\obj\\",
         "projectStyle": "PackageReference",
@@ -43,20 +43,6 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "dependencies": {
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Npgsql.Json.NET": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

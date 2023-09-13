@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CppMagp9wreAqgGE4ww/+vcm2RtB4j+i3+2xEBIqRzI3DtnLP9bZ0FfZ9Pjt12YDwYKW+0UFajGZEXilGrjwpQ==",
+  "dgSpecHash": "sbhSaKz8Gy03LgZKc8zogq86SSvCp4EeCie4rPIuDQiSZk4BTEZVtbo9rmWnLnh60ZfuzAc8BmZbztj5c/Fipw==",
   "success": true,
-  "projectFilePath": "D:\\ie10\\Desktop\\code\\Client\\Client.csproj",
+  "projectFilePath": "D:\\ie10\\Desktop\\code\\PROCAP_CLIENT\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ie10\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\ie10\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
